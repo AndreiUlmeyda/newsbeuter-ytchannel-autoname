@@ -28,7 +28,7 @@ Hint: If you leave out the redirection `> ~/.newsbeuter/urls` you can preview a 
 cd ~/.newsbeuter
 diff urls urls-bak
 ```
-before deleting the backup it might help verifying that nothing horrible happened since the script does not handle piping errors...or any errors, really.
+before deleting the backup might help verifying that nothing horrible happened since the script does not handle piping errors...or any errors, really.
 
 Give the script a few seconds time since the http requests happen sequentially to keep it short and simple.
 
