@@ -1,7 +1,7 @@
 #! /bin/awk -f
 # Automatically name youtube channel feeds in newsbeuter[1].
 # Example usage after backing up your old urls file to "urls-bak":
-# "./newsbeuter-ytchannel-names.awk ~/.newsbeuter/urls-bak > ~/.newsbeuter/urls"
+# "./newsbeuter-ytchannel-autoname.awk ~/.newsbeuter/urls-bak > ~/.newsbeuter/urls"
 
 # REQUIRES httpie[2] (and, well, awk and grep) being installed on your system.
 # ASSUMES that the first line containing the string "<name>" in the html
