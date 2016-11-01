@@ -3,7 +3,7 @@
 AWK! HUUH! Whaat is it goood for? Absolutely noth...oh wait.
 
 ## Why would I want it?
-If you imported a number of youtube channel subscriptions into [newsbeuter](http://newsbeuter.org) and are too lazy or too busy to give them proper names by editing the urls file then this script may save you a few minutes of your precious time.
+If you imported a number of youtube channel subscriptions into [newsbeuter](http://newsbeuter.org) and are too lazy or too busy to give them proper names by editing the urls file, then this script may save you a few minutes of your precious time.
 ## What is it doing?
 It fetches the html documents corresponding to youtube feeds in your urls file, extracts what is, hopefully, the channels name and then appends that name to the respective line.
 ## System requirements/Dependencies
@@ -28,7 +28,7 @@ Hint: If you leave out the redirection `> ~/.newsbeuter/urls` you can preview a 
 cd ~/.newsbeuter
 diff urls urls-bak
 ```
-before deleting the backup might help verifying that nothing horrible happened since the script does not handle piping errors...or any errors, really.
+before deleting the backup it might help verifying that nothing horrible happened since the script does not handle piping errors...or any errors, really.
 
 Give the script a few seconds time since the http requests happen sequentially to keep it short and simple.
 
