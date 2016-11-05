@@ -1,0 +1,6 @@
+#!/bin/bats
+
+@test "test" {
+	run echo "fresh"
+    [ $status = 0 ]
+}
