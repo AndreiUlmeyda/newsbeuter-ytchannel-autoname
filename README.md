@@ -4,6 +4,8 @@ AWK! HUUH! Whaat is it goood for? Absolutely noth...oh wait.
 
 ## Why would I want it?
 If you imported a number of youtube channel subscriptions into [newsbeuter](http://newsbeuter.org) and are too lazy or too busy to give them proper names by editing the urls file, then this script may save you a few minutes of your precious time.
+
+UPDATE: Feed auto naming works generally well in newsbeuter, only these names are not appended to the urls file. The usefulness of this script is therefore reduced to cases where you find yourself trying to manipulate the urls file in an editor and prefer to have the names visible there as well.
 ## What is it doing?
 It fetches the html documents corresponding to youtube feeds in your urls file, extracts what is, hopefully, the channels name and then appends that name to the respective line.
 ## System requirements/Dependencies
