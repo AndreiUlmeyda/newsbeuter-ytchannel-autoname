@@ -1,6 +1,30 @@
 #!/bin/bats
 
-@test "test" {
-	run echo "fresh"
-    [ $status = 0 ]
+load 'helpers/bats-support/load'
+load 'helpers/bats-assert/load'
+load 'helpers/mocks/stub'
+
+srcFolder="/home/ulmeyda/repos/newsbeuter-ytchannel-autoname/src/"
+autoname=$srcFolder"newsbeuter-ytchannel-autoname.awk"
+
+pipeToAutoName(){
+	input=$1
+	run bash -c "echo \"$input\" | $autoname"
+}
+
+assertSuccessWithOutput(){
+	assert_success
+    assert_output "$1"
+}
+
+@test "given empty line then return unchanged" {
+	emptyLine=$'\n'
+	pipeToAutoName $emptyLine
+	assertSuccessWithOutput $emptyLine
+}
+
+@test "given one line w/o youtube pattern then return unchanged" {
+	aLineOfText=$'ren'
+	pipeToAutoName $aLineOfText
+	assertSuccessWithOutput $aLineOfText
 }
